@@ -52,13 +52,13 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import flattenShapeFrom from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-flatten-shape-from@deno/mod.js';
+import flattenShapeFrom from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-flatten-shape-from@v0.1.0-deno/mod.js';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { assign } from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-flatten-shape-from@deno/mod.js';
+import { assign } from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-flatten-shape-from@v0.1.0-deno/mod.js';
 ```
 
 #### flattenShapeFrom( shape, dim )
@@ -119,7 +119,7 @@ The function accepts the following parameters:
 import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-discrete-uniform@deno/mod.js';
 import zip from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-zip@deno/mod.js';
 import logEachMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each-map@deno/mod.js';
-import flattenShapeFrom from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-flatten-shape-from@deno/mod.js';
+import flattenShapeFrom from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-flatten-shape-from@v0.1.0-deno/mod.js';
 
 var opts = {
     'dtype': 'int32'
