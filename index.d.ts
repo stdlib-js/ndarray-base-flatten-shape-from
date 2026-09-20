@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2025 The Stdlib Authors.
@@ -16,34 +16,35 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@esm/index.d.ts"/>
+
+import { Collection } from '@stdlib/types/array';
 
 /**
-* Flatten a shape starting from a specified dimension.
+* Flattens a shape starting from a specified dimension.
 *
-* @module @stdlib/ndarray-base-flatten-shape-from
+* @param shape - array shape
+* @param dim - dimension to start flattening from
+* @returns flattened shape
 *
 * @example
-* var flattenShapeFrom = require( '@stdlib/ndarray-base-flatten-shape-from' );
-*
 * var sh = flattenShapeFrom( [ 3, 3, 2 ], 1 );
 * // returns [ 3, 6 ]
+*
+* sh = flattenShapeFrom( [ 3, 2, 1 ], 1 );
+* // returns [ 3, 2 ]
+*
+* sh = flattenShapeFrom( [ 3 ], 0 );
+* // returns [ 3 ]
+*
+* sh = flattenShapeFrom( [ 3, 2 ], 0 );
+* // returns [ 6 ]
 */
-
-// MODULES //
-
-var setReadOnly = require( '@stdlib/utils-define-nonenumerable-read-only-property' );
-var main = require( './main.js' );
-var assign = require( './assign.js' );
-
-
-// MAIN //
-
-setReadOnly( main, 'assign', assign );
+declare function flattenShapeFrom( shape: Collection<number>, dim: number ): Array<number>;
 
 
 // EXPORTS //
 
-module.exports = main;
-
-// exports: { "assign": "main.assign" }
+export = flattenShapeFrom;
